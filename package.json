@@ -1,0 +1,40 @@
+{
+    "name": "Base Laravel Build",
+    "description": "Base build for use with projects. Includes Laravel, CodeSniffer, and jQuery, with support for Bower, Composer, and Grunt automated tasks (Including Handlebars and LESS files)",
+    "version": "0.0.1",
+    "homepage": "http://www.stephenwalcher.com/",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/stephen-walcher/base-laravel-build"
+    },
+    "author": {
+        "name": "Stephen Walcher",
+        "url": "http://www.stephenwalcher.com/"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "scripts": {
+        "test": "grunt test"
+    },
+    "dependencies": {
+        "uglify-js": "^2.4.0"
+    },
+    "devDependencies": {
+        "grunt": "^0.4.2",
+        "grunt-cli": "^0.1.13",
+        "grunt-contrib-clean": "^0.5.0",
+        "grunt-contrib-internal": "^0.4.2",
+        "grunt-contrib-jshint": "^0.10.0",
+        "grunt-contrib-nodeunit": "^0.4.0",
+        "grunt-contrib-less": "^0.11.2",
+        "grunt-contrib-uglify": "^0.4.0",
+        "grunt-contrib-watch": "^0.6.1",
+        "grunt-contrib-handlebars": "~0.8.0",
+        "handlebars": "~2.0.0-alpha.4",
+        "bower": "~1.3"
+    },
+    "peerDependencies": {
+        "grunt": "^0.4.0"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "stephen-walcher/base-laravel-build",
+    "description": "Base build for use with projects. Includes Laravel, CodeSniffer, and jQuery, with support for Bower, Composer, and Grunt automated tasks (Including Handlebars and LESS files)",
+    "keywords": ["framework", "laravel", "grunt", "composer", "bower"],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "4.2.*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "app/commands",
+            "app/controllers",
+            "app/models",
+            "app/database/migrations",
+            "app/database/seeds",
+            "app/tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
+}
