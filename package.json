@@ -1,5 +1,5 @@
 {
-    "name": "Base Laravel Build",
+    "name": "base-laravel-build",
     "description": "Base build for use with projects. Includes Laravel, CodeSniffer, and jQuery, with support for Bower, Composer, and Grunt automated tasks (Including Handlebars and LESS files)",
     "version": "0.0.1",
     "homepage": "http://www.stephenwalcher.com/",
