@@ -9,3 +9,6 @@ Simple Laravel base install for use on new projects. Includes Laravel, CodeSniff
 * Run `bower install`
 * Set up configuration in app/config/app.php
 * Enjoy
+
+## Data
+Sample data taken from official MySQL [Sakila Sample Database](http://dev.mysql.com/doc/sakila/en/)
