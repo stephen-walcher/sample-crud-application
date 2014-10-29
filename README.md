@@ -7,7 +7,8 @@ Simple Laravel base install for use on new projects. Includes Laravel, CodeSniff
 * Run `npm install`
 * Run `composer update`
 * Run `bower install`
-* Set up configuration in app/config/app.php
+* Run `countries.sql` in your local MySQL database
+* Set up database configuration in app/config/database.php
 * Enjoy
 
 ## Data
