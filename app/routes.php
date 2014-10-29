@@ -21,9 +21,9 @@ Route::get('countries', 'CountryController@displayCountries');
 Route::group(['prefix' => 'country'], function() {
     Route::get('add', 'CountryController@displayAdd');
     Route::post('add', 'CountryController@processAdd');
-    
+
     Route::get('edit/{id}', 'CountryController@displayEdit');
     Route::post('edit/{id}', 'CountryController@processEdit');
-    
+
     Route::get('delete/{id}', 'CountryController@processDelete');
 });

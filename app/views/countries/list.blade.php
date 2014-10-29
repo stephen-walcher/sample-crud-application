@@ -4,7 +4,7 @@
     <div class="row">
         <a href="/country/add" class="add-country btn btn-default pull-right"><span class="glyphicon glyphicon-plus"></span> Create New</a>
     </div>
-    
+
     <div class="row top-buffer">
         <table id="countries_table" class="table table-striped">
             <thead>
