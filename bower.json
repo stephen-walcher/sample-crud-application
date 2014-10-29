@@ -17,12 +17,14 @@
         "lodash": "bestiejs/lodash",
         "jquery": "jquery/jquery#2.x",
         "bootstrap": "twbs/bootstrap#~3.0.2",
-        "handlebars": "handlebars#master"
+        "handlebars": "handlebars#master",
+        "datatables": "datatables#master"
     },
     "devDependencies": {
         "lodash": "bestiejs/lodash",
         "jquery": "jquery/jquery#2.x",
         "bootstrap": "twbs/bootstrap#~3.0.2",
-        "handlebars": "handlebars#master"
+        "handlebars": "handlebars#master",
+        "datatables": "datatables#master"
     }
 }

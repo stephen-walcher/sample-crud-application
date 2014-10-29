@@ -3,7 +3,7 @@ module.exports = function(grunt) {
         handlebars: {
             templates: {
                 options: {
-                    namespace: 'Project.templates',
+                    namespace: 'Kenetic.templates',
                     processName: function(filePath) {
                         var pieces = filePath.split('/');
                         var pieces = pieces[pieces.length - 1].split('.');

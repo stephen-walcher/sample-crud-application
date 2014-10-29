@@ -1,17 +1,29 @@
 <?php
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
+/**
+ * Countries Listing
+ *
+ * Simple CRUD interface for the `country` database table
+ *
+ * Created as a code challenge for Kinetic Supply
+ *
+ * @package Walcher
+ * @subpackage Kinetic
+ * @author Stephen Walcher <stephenwalcher@gmail.com>
+ */
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return Redirect::to('countries');
+});
+
+Route::get('countries', 'CountryController@displayCountries');
+
+Route::group(['prefix' => 'country'], function() {
+    Route::get('add', 'CountryController@displayAdd');
+    Route::post('add', 'CountryController@processAdd');
+    
+    Route::get('edit/{id}', 'CountryController@displayEdit');
+    Route::post('edit/{id}', 'CountryController@processEdit');
+    
+    Route::get('delete/{id}', 'CountryController@processDelete');
 });
