@@ -29,3 +29,7 @@
     </div>
     {{ Former::close() }}
 @stop
+
+@section('header-css')
+    {{ HTML::style('/css/countries/record.css') }}
+@stop
